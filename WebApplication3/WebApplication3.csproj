@@ -128,6 +128,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\available_seat_img.gif" />
+    <Content Include="Images\booked_seat_img.gif" />
+    <Content Include="Images\selected_seat_img.gif" />
     <Content Include="Login.aspx" />
     <Content Include="Movie Reservation.aspx" />
     <Content Include="Scripts\bootstrap.js" />

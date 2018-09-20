@@ -13,5 +13,15 @@ namespace WebApplication3
         {
 
         }
+
+        protected void Events_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Events.aspx");
+        }
+
+        protected void Logout_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Home.aspx");
+        }
     }
 }

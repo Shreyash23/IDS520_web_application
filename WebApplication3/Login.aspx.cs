@@ -16,7 +16,6 @@ namespace WebApplication3
         {
             connectionString = @"Data Source=ids520.database.windows.net;Initial Catalog=web_app_ids520_2 ;User ID=ids520k;Password=UICIDS123!";
             sqlConnection = new SqlConnection(connectionString);
-            sqlConnection.Open();
         }
 
         protected void login_button_Click(object sender, EventArgs e)
@@ -29,10 +28,17 @@ namespace WebApplication3
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@usr", userName);
                 cmd.Parameters.AddWithValue("@pwd", password);
-
+                sqlConnection.Open();
                 if (cmd.ExecuteScalar().ToString() == "1")
                 {
+                    Session["Email"] = userName;
                     Response.Redirect("Events.aspx");
+                    sqlConnection.Close();
+                }
+                else
+                {
+                    Response.Redirect("User Not found");
+                    sqlConnection.Close();
                 }
             }
             catch (Exception ex)

@@ -9,7 +9,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Thank You!</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your ticket(s) are confirmed!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you for using our site!<br />
+            <br />
+            <asp:Button ID="Events" runat="server" OnClick="Events_Click" Text="Browse More Events" Width="227px" />
+&nbsp;<asp:Button ID="Logout" runat="server" OnClick="Logout_Click" style="margin-left: 86px" Text="Logout" />
+        </div>
     </form>
 </body>
 </html>
